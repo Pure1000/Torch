@@ -6,9 +6,11 @@ input.onButtonPressed(Button.A, function () {
         # # # # #
         # # # # #
         `)
+    datalogger.log(datalogger.createCV("Torch", 1))
 })
 input.onButtonPressed(Button.B, function () {
     basic.clearScreen()
+    datalogger.log(datalogger.createCV("Torch", 0))
 })
 basic.showString("Torch")
 basic.showString("A=On")
